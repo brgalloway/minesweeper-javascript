@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Minesweeper</title>
+   
+</head>
+<body>
+<div class="grid">
+    <div><h2>Minesweeper</h2></div>
+    <div id="placeholder"></div>
+    <div>
+         <canvas class="minefield"></canvas>
+    </div>
+</div>
+</body>
+<script>
+    var playerName = prompt("Please enter your name: ");
+    var placeholder = document.querySelector("#placeholder");
+    placeholder.innerHTML = playerName;
+    alert("Welcome to Minesweeper " + playerName);
+</script>
+<script src="minesweeper.js"></script>
+</html>
